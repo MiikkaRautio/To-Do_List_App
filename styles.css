@@ -158,7 +158,12 @@
 .hero{
     background-image: url("./kuvat/pexels-bri-schneiter-346529.jpg");
     background-size: cover;
-    padding: 13rem;
+    padding: 13rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
 }
 
 .hero__container{
@@ -211,11 +216,17 @@
     background-image: url("./kuvat/pexels-cmonphotography-1809644.jpg");
     background-size: cover;
     padding: 10rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
 }
 
 .main__container {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-gap: 4rem;
     align-items: center;
     justify-content: center;
     margin: 0 auto;
@@ -224,6 +235,18 @@
     width: 100%;
     max-width: 1300px;
     padding: 0 50px;
+}
+
+@media screen and (max-width: 1100px){
+    .main__container{
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin: 0 auto;
+        height: 90%;
+    }
 }
 
 .main__content {
@@ -240,17 +263,13 @@
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-    text-decoration: none;
     font-size: 2rem;
     text-transform: uppercase;
     margin-bottom: 32px;
 }
 
 .main__content h2{
-    font-size: 3rem;
+    font-size: 4rem;
     background: #BA5370;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #F4E2D8, #BA5370);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right ,#e7c6d0, #F4E2D8); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -268,21 +287,86 @@
 
 .main__video--card{
     border-radius: 10px;
-}
-
-.video{
     margin: 10px;
-    height: 500px;
-    width: 800px;
-    padding: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.main__video--container{
-    margin-right: 15rem;
+.video{
     
+}
+
+.main__video--container{
+   
+    
+}
+
+.accomplishments{
+    background-image: url("./kuvat/pexels-felix-mittermeier-1269777.jpg");
+    background-size: cover;
+    padding: 10rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.accomplishments h1{
+    background: #ECE9E6;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FFFFFF, #ECE9E6);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FFFFFF, #ECE9E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    font-size: 3rem;
+    margin-bottom: 5rem;
+}
+
+.accomplishments__container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+.accomplishments__card{
+    margin: 10px;
+    height: 425px;
+    width: 300px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+    background: #000046;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #1CB5E0, #171747);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #1CB5E0, #1f1f49); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    transition: 0.3s ease-in;
+}
+
+.accomplishments__card h2{
+    text-align: center;
+}
+
+.accomplishments__card p{
+    text-align: center;
+    margin-top: 24px;
+    font-size: 20px;
+}
+
+@media screen and (max-width: 1300px){
+    .accomplishments__container{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .accomplishments__container{
+        grid-template-columns: 1fr;
+    }
 }
 
 
