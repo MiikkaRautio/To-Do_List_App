@@ -6,6 +6,13 @@
     scroll-behavior: smooth;
 }
 
+body{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
 .navbar {
     background: #131313;
     height: 80px;
@@ -360,8 +367,6 @@
         
     }
 
-    
-   
 
 }
 
