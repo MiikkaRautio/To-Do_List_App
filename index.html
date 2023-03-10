@@ -24,10 +24,10 @@
                     <a href="#video" class="navbar__links" id="video-page">Video</a>
                 </li>
                 <li class="navbar__item">
-                    <a href="#accomplishments" class="navbar__links" id="accomplishments-page">Accomplishments</a>
+                    <a href="#to-do_list" class="navbar__links" id="to-do_list-page">To-Do List</a>
                 </li>
                 <li class="navbar__item">
-                    <a href="#to-do_list" class="navbar__links" id="to-do_list-page">To-Do List</a>
+                    <a href="#accomplishments" class="navbar__links" id="accomplishments-page">Accomplishments</a>
                 </li>
             </ul>
         </div>
@@ -57,6 +57,46 @@
         </div>
     </div>
 
+    <div class="to-do_list" id="to-do_list">
+        <header class="to-do_list_header" id = "to-do_list_header">
+            <h1>To-Do List</h1>
+            <form id="new-task-form">
+                <input 
+                    type="text" 
+                    name="new-task-input" 
+                    id="new-task-input" 
+                    placeholder="What do you have planned?" />
+                <input 
+                    type="submit"
+                    id="new-task-submit" 
+                    value="Add task" />
+            </form>
+        </header>
+        <main class="to-do_list_main" id="to-do_list_main">
+            <section class="task-list">
+                <h2>Tasks</h2>
+    
+                <div id="tasks">
+    
+                    <!-- <div class="task">
+                        <div class="content">
+                            <input 
+                                type="text" 
+                                class="text" 
+                                value="A new task"
+                                readonly>
+                        </div>
+                        <div class="actions">
+                            <button class="edit">Edit</button>
+                            <button class="delete">Delete</button>
+                        </div>
+                    </div> -->
+    
+                </div>
+            </section>
+        </main>
+    </div>
+
     <div class="accomplishments" id="accomplishments">
         <h1>Accomplishments</h1>
         <div class="accomplishments__container">
@@ -78,7 +118,7 @@
             </div>
         </div>
     </div>
-
+    
     <script src="app.js"></script>
 </body>
 </html>
