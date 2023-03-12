@@ -461,9 +461,9 @@ body{
 	--darker: #1F2937;
 	--darkest: #111827;
 	--grey: #6B7280;
-	--pink: #EC4899;
+	--pink: #8a2000;
 	--purple: #8B5CF6;
-	--light: #EEE;
+	--light: #000000;
 }
 
 * {
@@ -475,7 +475,7 @@ body{
 .to-do_list{
     background-image: url("./kuvat/pexels-stephan-seeber-1261728.jpg");
     background-size: cover;
-    padding: 10rem 0;
+    padding: 50vh 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -497,6 +497,7 @@ body{
 	margin-bottom: 1rem;
 }
 
+
 .to-do_list_main{
     flex: 1 1 0%;
 	max-width: 800px;
@@ -517,7 +518,7 @@ input, button {
 
 #new-task-input {
 	flex: 1 1 0%;
-	background-color: var(--darker);
+	background-color: #fff;
 	padding: 1rem;
 	border-radius: 1rem;
 	margin-right: 1rem;
@@ -530,10 +531,9 @@ input, button {
 }
 
 #new-task-submit {
-	color: var(--pink);
+	background: #fff;
 	font-size: 1.25rem;
 	font-weight: 700;
-	background-image: linear-gradient(to right, var(--pink), var(--purple));
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	cursor: pointer;
@@ -557,14 +557,14 @@ input, button {
 .task-list h2 {
 	font-size: 1.5rem;
 	font-weight: 300;
-	color: var(--grey);
+	color: #fff;
 	margin-bottom: 1rem;
 }
 
 #tasks .task {
 	display: flex;
 	justify-content: space-between;
-	background-color: var(--darkest);
+	background-color: #fff;
 	padding: 1rem;
 	border-radius: 1rem;
 	margin-bottom: 1rem;
@@ -609,12 +609,14 @@ input, button {
 }
 
 .task .actions .edit {
-	background-image: linear-gradient(to right, var(--pink), var(--purple));
+	background: #000000;
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
 
 .task .actions .delete {
-	color: crimson;
+    background: #000000;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
 
